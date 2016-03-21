@@ -10,8 +10,6 @@ var pQ1  = document.getElementById('question-4');
 var pA1 = document.getElementById('answer-4');
 var pQ1  = document.getElementById('question-5');
 var pA1 = document.getElementById('answer-5');
-var pQ1  = document.getElementById('question-6');
-var pA1 = document.getElementById('answer-6');
 
 var questions = [
   'Write a function called sum() that takes in two numbers as arguments and then returns the sum of those numbers.',
