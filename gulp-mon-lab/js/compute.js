@@ -34,3 +34,10 @@ function addFive(num) {
 // }
 
 exports.addFive = addFive;
+
+function sum(num1, num2) {
+  var total = (num1 + num2);
+  return total;
+  console.log('The sum of ' + num1 + ' and ' + num2 + ' is ' + total);
+}
+exports.sum = sum;
