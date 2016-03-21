@@ -62,3 +62,15 @@ function sumAndMultiply(num1, num2, num3) {
   return array;
 }
 exports.sumAndMultiply = sumAndMultiply;
+
+function sumArray(array) {
+  var sumItems = 0;
+  for (var i=0; i<array.length; i++) {
+    sumItems += array[i];
+  }
+  //The line below makes a test that should pass, fail.
+  // console.table(array);
+  console.log(array + ' was passed in as an array of numbers, and ' + sumItems + ' is their sum.');
+  return sumItems;
+}
+exports.sumArray = sumArray;
