@@ -15,5 +15,6 @@ describe('My first test', function() {
   it('should increment -1008 to get -1003', function() { assert(compute.addFive(-1008) == -1003); });
 
   it('should return 9 because 5 + 4 is 9', function() { assert(9 == compute.sum(5,4)); });
+  it('should return 24 because 8 * 3 is 24', function() { assert(24 == compute.multiply(8,3)); });
 
 });
