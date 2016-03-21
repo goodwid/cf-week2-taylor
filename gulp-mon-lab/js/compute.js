@@ -74,3 +74,15 @@ function sumArray(array) {
   return sumItems;
 }
 exports.sumArray = sumArray;
+
+function multiplyArray(array) {
+  var productItems = 1;
+  for (var i=0; i<array.length; i++) {
+    productItems *= array[i];
+  }
+  //The line below makes a test that should pass, fail.
+  // console.table(array);
+  console.log('The numbers ' + array + ' have a product of ' + productItems + '.');
+  return productItems;
+}
+exports.multiplyArray = multiplyArray;
