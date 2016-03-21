@@ -34,3 +34,18 @@ function addFive(num) {
 // }
 
 exports.addFive = addFive;
+
+function isEven(num) {
+  return (num % 2) == 0;
+}
+exports.isEven = isEven;
+
+function multOf3(num) {
+  return (num % 3) == 0;
+}
+exports.multOf3 = multOf3;
+
+function multOf6(num) {
+  return (isEven(num) && multOf3(num));
+}
+exports.multOf6 = multOf6;
