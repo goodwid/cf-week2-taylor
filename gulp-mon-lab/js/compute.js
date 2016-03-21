@@ -57,8 +57,20 @@ function sumAndMultiply(num1, num2, num3) {
   var multFirstTwo = multiply(num1, num2);
   var multAll = multiply(multFirstTwo, num3);
   array[1] = multAll;
-  return array;
   console.log(num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' +sumAll + '.');
   console.log('The numbers ' + num1 + ' and ' + num2 + ' and ' + num3 + ' have a product of ' + multAll + '.');
+  return array;
 }
 exports.sumAndMultiply = sumAndMultiply;
+
+function sumArray(array) {
+  var sumItems = 0;
+  for (var i=0; i<array.length; i++) {
+    sumItems += array[i];
+  }
+  //The line below makes a test that should pass, fail.
+  // console.table(array);
+  console.log(array + ' was passed in as an array of numbers, and ' + sumItems + ' is their sum.');
+  return sumItems;
+}
+exports.sumArray = sumArray;
