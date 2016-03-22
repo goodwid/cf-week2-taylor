@@ -1,4 +1,4 @@
-function sum(num1, num2) {
+function sum(num1, num2) { // DG: Nice and compact!
   var total = (num1 + num2);
   return total;
   // console.log('The sum of ' + num1 + ' and ' + num2 + ' is ' + total);
@@ -19,6 +19,9 @@ function sumAndMultiply(num1, num2, num3) {
   array[0] = sumAll;
   var multFirstTwo = multiply(num1, num2);
   var multAll = multiply(multFirstTwo, num3);
+
+  // DG: Seems like an awful lot of variables to create just for a few calculations.  Try compressing: sum(sum(num1,num2),num3)..
+
   array[1] = multAll;
   console.log(num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' +sumAll + '.');
   console.log('The numbers ' + num1 + ' and ' + num2 + ' and ' + num3 + ' have a product of ' + multAll + '.');
@@ -40,7 +43,8 @@ exports.sumArray = sumArray;
 function multiplyArray(array) {
   var productItems = 1;
   for (var i=0; i<array.length; i++) {
-    productItems *= array[i];
+    productItems *= array[i];  // DG: I tried *= and got an error in my own code, I guess it was caused by something else..
+                               //     Lesson here: Fix one thing at a time, and test again.
   }
   // console.table(array);    Makes a test that should pass, fail.
   console.log('The numbers ' + array + ' have a product of ' + productItems + '.');

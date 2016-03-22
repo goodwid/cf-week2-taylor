@@ -1,3 +1,6 @@
+// DG: I like how everything is clean and blocked, makes it super easy to read.
+
+
 var exports = {};
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var pA4 = document.getElementById('answer-4');
   var pQ5  = document.getElementById('question-5');
   var pA5 = document.getElementById('answer-5');
+
+// DG: nice approach, well structured.
 
   var questions = [
     'Problem 1: Write a function called sum() that takes in two numbers as arguments and then returns the sum of those numbers.',
