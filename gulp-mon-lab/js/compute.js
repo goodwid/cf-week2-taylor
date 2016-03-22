@@ -31,8 +31,7 @@ function sumArray(array) {
   for (var i=0; i<array.length; i++) {
     sumItems += array[i];
   }
-  //The line below makes a test that should pass, fail.
-  // console.table(array);
+  // console.table(array);    Makes a test that should pass, fail.
   console.log(array + ' was passed in as an array of numbers, and ' + sumItems + ' is their sum.');
   return sumItems;
 }
@@ -43,8 +42,7 @@ function multiplyArray(array) {
   for (var i=0; i<array.length; i++) {
     productItems *= array[i];
   }
-  //The line below makes a test that should pass, fail.
-  // console.table(array);
+  // console.table(array);    Makes a test that should pass, fail.
   console.log('The numbers ' + array + ' have a product of ' + productItems + '.');
   return productItems;
 }

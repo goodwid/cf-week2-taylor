@@ -27,16 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
   pQ4.textContent = questions[3];
   pQ5.textContent = questions[4];
 
-  var sum = sum(45,55);
-  var multiply = multiply(30,90);
-  var sumAndMultiply = sumAndMultiply(3,4,5);
-  var sumArray = sumArray([1,2,3,4,5,6,7,8,9]);
-  var multiplyArray = multiplyArray([1,2,3,4,5]);
+  var sumOf = sum(45,55);
+  var multiplyBy = multiply(30,90);
+  var sumAndMultiplyBy = sumAndMultiply(3,4,5);
+  var sumOfArray = sumArray([1,2,3,4,5,6,7,8,9]);
+  var multiplyOfArray = multiplyArray([1,2,3,4,5]);
 
-  pA1.textContent = sum;
-  pA2.textContent = multiply;
-  pA3.textContent = sumAndMultiply;
-  pA4.textContent = sumArray;
-  pA5.textContent = multiplyArray;
+  pA1.textContent = 'OUTPUT: ' + sumOf;
+  pA2.textContent = 'OUTPUT: ' + multiplyBy;
+  pA3.textContent = 'OUTPUT: ' + sumAndMultiplyBy;
+  pA4.textContent = 'OUTPUT: ' + sumOfArray;
+  pA5.textContent = 'OUTPUT: ' + multiplyOfArray;
 
 });
